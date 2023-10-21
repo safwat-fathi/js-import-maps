@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Import Maps</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- import maps -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react",
+          "react-dom": "https://esm.sh/react-dom",
+          "htm": "https://unpkg.com/htm?module",
+          "lodash": "https://cdn.skypack.dev/lodash-es",
+          "moment": "https://cdn.skypack.dev/moment"
+        }
+      }
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
